@@ -1,0 +1,29 @@
+====
+service.py:
+run 'service.py' => automatically launches uvicorn service:app --reload
+
+OR
+
+Terminal:
+1. pip install "fastapi[all]"
+2. uvicorn service:app --reload
+
+====
+Postman: 127.0.0.1:8000
+
+GET 127.0.0.1:8000/status
+  output: 'connection established'
+
+GET 127.0.0.1:8000/model_1
+  output: model, roc_auc, author of model 1
+
+GET 127.0.0.1:8000/model_2
+  output: model, roc_auc, author of model 2
+
+POST 127.0.0.1:8000/predict_with_model_1
+body => raw => [copy-paste from requests/model1 or requests/model2]
+  output: client, time, prediction
+
+POST 127.0.0.1:8000/predict_with_model_2
+body => raw => [copy-paste from requests/model2]
+  output: client, time, prediction
