@@ -1,0 +1,191 @@
+""	"country"	"region"	"median_age"	"birth_rate"	"death_rate"	"life_expectancy"	"fertility_rate"	"obesity_rate"
+0	"Japan"	"East Asia/Southeast Asia"	"48#6"	7.0	11.44	84.65	1.38	4.3
+1	"Germany"	"Evropa"	"47#8"	8.63	12.22	81.3	1.48	22.3
+2	"Italy"	"Evropa"	"46#5"	8.37	10.7	82.67	1.47	19.9
+3	"Andorra"	"Evropa"	"46#2"	6.91	7.86	83.23	1.44	25.6
+4	"Greece"	"Evropa"	"45#3"	7.72	12.05	81.28	1.39	24.9
+5	"Slovenia"	"Evropa"	"44#9"	8.5	10.34	81.61	1.59	20.2
+6	"Portugal"	"Evropa"	"44#6"	8.02	10.9	81.29	1.42	20.8
+7	"Austria"	"Evropa"	"44#5"	9.48	9.85	82.07	1.5	20.1
+8	"Lithuania"	"Evropa"	"44#5"	9.42	15.05	75.61	1.61	26.3
+9	"Latvia"	"Evropa"	"44#4"	8.96	14.63	75.65	1.54	23.6
+10	"Croatia"	"Evropa"	"43#9"	8.68	12.78	76.97	1.44	24.4
+11	"Spain"	"Evropa"	"43#9"	8.05	9.78	82.21	1.51	23.8
+12	"Bulgaria"	"Evropa"	"43#7"	8.15	14.52	75.3	1.49	25.0
+13	"Estonia"	"Evropa"	"43#7"	9.03	13.06	77.63	1.61	21.2
+14	"Hungary"	"Evropa"	"43#6"	8.72	12.88	76.95	1.48	26.4
+15	"Serbia"	"Evropa"	"43#4"	8.74	13.49	76.56	1.47	21.5
+16	"Bosnia and Herzegovina"	"Evropa"	"43#3"	8.5	10.25	77.74	1.35	17.9
+17	"Czechia"	"Evropa"	"43#3"	8.75	10.72	79.5	1.49	26.0
+18	"Korea, South"	"East Asia/Southeast Asia"	"43#2"	6.89	6.96	82.78	1.09	4.7
+19	"Finland"	"Evropa"	"42#8"	10.49	10.33	81.55	1.74	22.2
+20	"Netherlands"	"Evropa"	"42#8"	10.98	9.22	81.95	1.78	20.4
+21	"Switzerland"	"Evropa"	"42#7"	10.41	8.44	83.03	1.58	19.5
+22	"Romania"	"Evropa"	"42#5"	8.39	11.99	76.3	1.38	22.5
+23	"Malta"	"Evropa"	"42#3"	9.84	8.37	83.0	1.5	28.9
+24	"Cuba"	"Central America"	"42#1"	10.25	9.22	79.41	1.71	24.6
+25	"Denmark"	"Evropa"	"42#0"	11.17	9.5	81.45	1.77	19.7
+26	"Poland"	"Evropa"	"41#9"	8.69	10.68	78.53	1.39	23.1
+27	"Canada"	"North America"	"41#8"	10.21	8.08	83.62	1.57	29.4
+28	"Slovakia"	"Evropa"	"41#8"	9.1	10.08	78.07	1.45	20.5
+29	"France"	"Evropa"	"41#7"	11.77	9.58	82.39	2.04	21.6
+30	"Belgium"	"Evropa"	"41#6"	11.03	9.71	81.65	1.77	22.1
+31	"Ukraine"	"Evropa"	"41#2"	9.23	13.9	73.18	1.56	24.1
+32	"Sweden"	"Evropa"	"41#1"	11.93	9.39	82.6	1.86	20.6
+33	"Belarus"	"Evropa"	"40#9"	9.32	12.96	74.01	1.51	24.5
+34	"United Kingdom"	"Evropa"	"40#6"	11.77	9.41	81.3	1.86	27.8
+35	"Russia"	"Central Asia"	"40#3"	9.71	13.4	72.16	1.6	23.1
+36	"Montenegro"	"Evropa"	"39#6"	11.35	10.37	77.51	1.82	23.3
+37	"Barbados"	"Central America"	"39#5"	10.96	7.9	78.31	1.7	23.1
+38	"Luxembourg"	"Evropa"	"39#5"	11.62	7.26	82.78	1.63	22.6
+39	"Norway"	"Evropa"	"39#5"	12.09	8.01	82.35	1.84	23.1
+40	"Thailand"	"East Asia/Southeast Asia"	"39#0"	10.25	7.66	77.41	1.54	10.0
+41	"Georgia"	"Middle East"	"38#6"	11.26	10.84	77.25	1.75	21.7
+42	"United States"	"North America"	"38#5"	12.33	8.35	80.43	1.84	36.2
+43	"China"	"East Asia/Southeast Asia"	"38#4"	11.3	8.26	76.31	1.6	6.2
+44	"United Arab Emirates"	"Middle East"	"38#4"	10.87	1.51	79.37	1.65	31.7
+45	"Cook Islands"	"Australia - Oceania"	"38#3"	12.85	8.89	76.89	2.09	55.9
+46	"Cyprus"	"Evropa"	"37#9"	10.76	6.9	79.51	1.48	21.8
+47	"Ireland"	"Evropa"	"37#8"	12.6	6.72	81.45	1.93	25.3
+48	"Trinidad and Tobago"	"Central America"	"37#8"	11.12	8.68	74.92	1.7	18.6
+49	"Moldova"	"Evropa"	"37#7"	10.45	12.46	72.16	1.58	18.9
+50	"Australia"	"Australia - Oceania"	"37#5"	12.35	6.78	82.89	1.74	29.0
+51	"New Zealand"	"Australia - Oceania"	"37#2"	12.83	6.91	82.33	1.87	30.8
+52	"Iceland"	"Evropa"	"37#1"	13.12	6.56	83.45	1.96	21.9
+53	"Saint Lucia"	"Central America"	"36#9"	12.27	7.96	78.71	1.73	19.7
+54	"Seychelles"	"Africa"	"36#8"	12.63	6.83	75.84	1.82	14.0
+55	"Armenia"	"Middle East"	"36#6"	11.45	9.48	75.86	1.65	20.2
+56	"Saint Kitts and Nevis"	"Central America"	"36#5"	12.43	7.24	76.83	1.77	22.9
+57	"Mauritius"	"Africa"	"36#3"	12.44	7.23	76.7	1.73	10.8
+58	"Singapore"	"East Asia/Southeast Asia"	"35#6"	9.13	3.93	86.19	1.15	6.1
+59	"Chile"	"South America"	"35#5"	12.92	6.47	79.57	1.76	28.0
+60	"Uruguay"	"South America"	"35#5"	12.75	9.24	78.19	1.76	27.9
+61	"Saint Vincent and the Grenadines"	"Central America"	"35#3"	12.44	7.42	76.43	1.75	23.7
+62	"Dominica"	"Central America"	"34#9"	14.16	8.14	77.96	2.02	27.9
+63	"Korea, North"	"East Asia/Southeast Asia"	"34#6"	14.35	9.39	71.65	1.91	6.8
+64	"Albania"	"Evropa"	"34#3"	12.86	7.27	79.23	1.53	21.7
+65	"Palau"	"Australia - Oceania"	"33#9"	11.47	8.19	74.38	1.7	55.3
+66	"Lebanon"	"Middle East"	"33#7"	13.35	5.57	78.53	1.71	32.0
+67	"Qatar"	"Middle East"	"33#7"	9.38	1.42	79.58	1.9	35.1
+68	"Sri Lanka"	"South Asia"	"33#7"	14.01	6.45	77.75	2.0	5.2
+69	"Grenada"	"Central America"	"33#3"	14.27	8.29	75.48	1.95	21.3
+70	"Brazil"	"South America"	"33#2"	13.44	6.8	74.98	1.73	22.1
+71	"Bahrain"	"Middle East"	"32#9"	12.5	2.81	79.67	1.68	29.8
+72	"Bahamas, The"	"Central America"	"32#8"	14.78	6.34	75.87	1.98	31.6
+73	"Antigua and Barbuda"	"Central America"	"32#7"	15.3	5.63	77.55	1.96	18.9
+74	"Tunisia"	"Africa"	"32#7"	15.21	6.35	76.57	2.03	26.9
+75	"Azerbaijan"	"Middle East"	"32#6"	14.03	6.93	73.88	1.87	19.9
+76	"Costa Rica"	"Central America"	"32#6"	14.53	4.86	79.41	1.87	25.7
+77	"Argentina"	"South America"	"32#4"	15.8	7.36	78.07	2.2	28.3
+78	"Turkey"	"Middle East"	"32#2"	14.54	6.02	75.96	1.94	32.1
+79	"Vietnam"	"East Asia/Southeast Asia"	"31#9"	16.04	5.78	75.25	2.06	2.1
+80	"Iran"	"Middle East"	"31#7"	15.78	5.14	75.06	1.93	25.8
+81	"Kazakhstan"	"Central Asia"	"31#6"	15.87	8.14	72.25	2.13	21.0
+82	"Colombia"	"South America"	"31#2"	16.51	5.53	76.91	2.14	22.3
+83	"Brunei"	"East Asia/Southeast Asia"	"31#1"	16.3	3.75	78.14	1.75	14.1
+84	"Indonesia"	"East Asia/Southeast Asia"	"31#1"	15.59	6.74	72.82	2.04	6.9
+85	"Suriname"	"South America"	"31#0"	14.7	6.1	73.57	1.85	26.4
+86	"Saudi Arabia"	"Middle East"	"30#8"	14.56	3.39	76.4	1.95	35.4
+87	"Israel"	"Middle East"	"30#4"	17.52	5.06	83.15	2.57	26.1
+88	"Panama"	"Central America"	"30#1"	16.67	5.01	79.47	2.21	22.7
+89	"Uzbekistan"	"Central Asia"	"30#1"	15.85	5.4	75.03	1.73	16.6
+90	"Venezuela"	"South America"	"30#0"	17.55	7.13	72.22	2.24	25.6
+91	"Fiji"	"Australia - Oceania"	"29#9"	16.9	6.31	74.0	2.28	30.2
+92	"Mongolia"	"East Asia/Southeast Asia"	"29#8"	16.32	6.28	71.08	1.93	20.6
+93	"Kuwait"	"Middle East"	"29#7"	17.9	2.23	78.9	2.25	37.9
+94	"Paraguay"	"South America"	"29#7"	16.43	4.84	78.13	1.89	20.3
+95	"Maldives"	"South Asia"	"29#5"	15.69	4.12	76.69	1.71	8.6
+96	"Jamaica"	"Central America"	"29#4"	16.03	7.42	75.49	2.06	24.7
+97	"Mexico"	"North America"	"29#3"	17.29	5.41	76.94	2.17	28.9
+98	"Burma"	"East Asia/Southeast Asia"	"29#2"	16.65	7.14	69.62	2.05	5.8
+99	"Malaysia"	"East Asia/Southeast Asia"	"29#2"	14.72	5.66	75.87	1.76	15.6
+100	"Turkmenistan"	"Central Asia"	"29#2"	17.85	5.95	71.54	2.04	18.6
+101	"Bhutan"	"South Asia"	"29#1"	16.17	6.28	71.5	1.8	6.4
+102	"Morocco"	"Africa"	"29#1"	17.58	6.53	73.56	2.29	26.1
+103	"Peru"	"South America"	"29#1"	16.67	6.09	74.96	2.02	19.7
+104	"Algeria"	"Africa"	"28#9"	19.24	4.32	77.79	2.55	27.4
+105	"Ecuador"	"South America"	"28#8"	16.71	5.15	77.76	2.07	19.9
+106	"India"	"South Asia"	"28#7"	17.53	7.1	70.03	2.28	3.9
+107	"South Africa"	"Africa"	"28#0"	18.89	9.27	65.04	2.2	28.3
+108	"Bangladesh"	"South Asia"	"27#9"	17.88	5.44	74.43	2.1	3.6
+109	"Dominican Republic"	"Central America"	"27#9"	18.24	6.29	72.28	2.23	27.6
+110	"El Salvador"	"Central America"	"27#7"	18.22	5.91	75.11	2.07	24.6
+111	"Guyana"	"South America"	"27#5"	16.64	6.87	71.59	2.07	20.2
+112	"Kyrgyzstan"	"Central Asia"	"27#3"	20.06	6.18	72.07	2.52	16.6
+113	"Nicaragua"	"Central America"	"27#3"	16.71	5.16	74.51	1.81	23.7
+114	"Nauru"	"Australia - Oceania"	"27#0"	21.49	6.24	67.62	2.65	61.0
+115	"Cabo Verde"	"Africa"	"26#8"	18.78	5.84	73.47	2.14	11.8
+116	"Tuvalu"	"Australia - Oceania"	"26#6"	22.97	8.04	68.07	2.86	51.6
+117	"Cambodia"	"East Asia/Southeast Asia"	"26#4"	20.84	7.15	66.27	2.36	3.9
+118	"Micronesia, Federated States of"	"Australia - Oceania"	"26#3"	18.65	4.18	74.17	2.27	45.8
+119	"Oman"	"Middle East"	"26#2"	22.58	3.25	76.64	2.73	27.0
+120	"Libya"	"Africa"	"25#8"	22.23	3.46	76.93	3.13	32.5
+121	"Botswana"	"Africa"	"25#7"	20.6	9.12	65.24	2.42	18.9
+122	"Kiribati"	"Australia - Oceania"	"25#7"	20.27	6.94	67.59	2.23	46.0
+123	"Samoa"	"Australia - Oceania"	"25#6"	19.32	5.36	74.92	2.46	47.3
+124	"Bolivia"	"South America"	"25#3"	20.36	6.26	70.7	2.45	20.2
+125	"Nepal"	"South Asia"	"25#3"	17.78	5.57	72.12	1.93	4.1
+126	"Tajikistan"	"Central Asia"	"25#3"	21.22	5.78	69.06	2.48	14.2
+127	"Djibouti"	"Africa"	"24#9"	22.43	7.17	65.0	2.17	13.5
+128	"Lesotho"	"Africa"	"24#7"	23.3	11.41	58.9	2.95	16.6
+129	"Honduras"	"Central America"	"24#4"	18.19	4.67	74.9	2.05	21.4
+130	"Egypt"	"Africa"	"24#1"	26.44	4.36	74.01	3.23	32.0
+131	"Haiti"	"Central America"	"24#1"	21.4	7.29	65.61	2.48	22.7
+132	"Philippines"	"East Asia/Southeast Asia"	"24#1"	22.66	5.99	70.32	2.89	6.4
+133	"Tonga"	"Australia - Oceania"	"24#1"	20.6	4.95	77.29	2.81	48.2
+134	"Laos"	"East Asia/Southeast Asia"	"24#0"	22.74	7.12	66.0	2.57	5.3
+135	"Papua New Guinea"	"East Asia/Southeast Asia"	"24#0"	22.08	5.97	69.86	2.79	21.3
+136	"Belize"	"Central America"	"23#9"	21.62	3.99	75.56	2.66	24.1
+137	"Marshall Islands"	"Australia - Oceania"	"23#8"	22.42	4.25	74.38	2.81	52.9
+138	"Eswatini"	"Africa"	"23#7"	23.87	9.9	59.13	2.48	16.5
+139	"Jordan"	"Middle East"	"23#5"	22.79	3.44	75.75	3.0	35.5
+140	"Solomon Islands"	"Australia - Oceania"	"23#5"	23.07	3.97	76.45	2.92	22.5
+141	"Syria"	"Middle East"	"23#5"	23.25	4.36	74.01	2.85	27.8
+142	"Guatemala"	"Central America"	"23#2"	22.79	4.94	72.63	2.67	21.2
+143	"Vanuatu"	"Australia - Oceania"	"23#0"	21.95	3.97	74.87	2.72	25.2
+144	"Pakistan"	"South Asia"	"22#0"	26.95	6.1	69.37	3.53	8.6
+145	"Gambia, The"	"Africa"	"21#8"	26.42	6.66	66.15	3.13	10.3
+146	"Namibia"	"Africa"	"21#8"	25.33	7.07	65.87	3.03	17.2
+147	"Ghana"	"Africa"	"21#4"	29.08	6.3	69.01	3.71	10.9
+148	"Iraq"	"Middle East"	"21#2"	25.21	3.92	72.9	3.32	30.4
+149	"Gabon"	"Africa"	"21#0"	26.14	5.76	69.37	3.36	15.0
+150	"Mauritania"	"Africa"	"21#0"	28.49	7.54	64.86	3.59	12.7
+151	"Comoros"	"Africa"	"20#9"	22.98	6.61	66.9	2.86	7.8
+152	"Zimbabwe"	"Africa"	"20#5"	33.34	9.02	62.83	3.91	15.5
+153	"Cote d'Ivoire"	"Africa"	"20#3"	28.67	7.75	61.8	3.6	10.3
+154	"Equatorial Guinea"	"Africa"	"20#3"	30.09	7.16	66.35	4.02	8.0
+155	"Eritrea"	"Africa"	"20#3"	27.41	6.79	66.51	3.65	5.0
+156	"Madagascar"	"Africa"	"20#3"	29.22	6.09	67.86	3.7	5.3
+157	"Central African Republic"	"Africa"	"20#0"	33.2	12.01	55.07	4.09	7.5
+158	"Kenya"	"Africa"	"20#0"	26.78	5.09	69.32	3.36	7.1
+159	"Togo"	"Africa"	"20#0"	32.34	5.39	70.99	4.28	8.4
+160	"Ethiopia"	"Africa"	"19#8"	31.03	5.8	67.9	4.07	4.5
+161	"Yemen"	"Middle East"	"19#8"	25.21	5.69	67.18	3.1	17.1
+162	"Rwanda"	"Africa"	"19#7"	27.18	5.95	65.48	3.42	5.8
+163	"Timor-Leste"	"East Asia/Southeast Asia"	"19#6"	31.45	5.67	69.62	4.32	3.8
+164	"Afghanistan"	"South Asia"	"19#5"	36.08	12.57	53.25	4.72	5.5
+165	"Congo, Republic of the"	"Africa"	"19#5"	32.15	8.55	61.69	4.41	9.6
+166	"Senegal"	"Africa"	"19#4"	31.31	7.55	63.83	3.97	8.8
+167	"Sao Tome and Principe"	"Africa"	"19#3"	28.94	6.33	66.72	3.69	12.4
+168	"Guinea"	"Africa"	"19#1"	35.86	8.28	63.53	4.89	7.7
+169	"Sierra Leone"	"Africa"	"19#1"	35.04	9.7	60.19	4.58	8.7
+170	"Nigeria"	"Africa"	"18#6"	34.38	8.89	60.87	4.67	8.9
+171	"South Sudan"	"Africa"	"18#6"	38.26	9.84	58.6	5.43	6.6
+172	"Cameroon"	"Africa"	"18#5"	35.91	7.93	62.79	4.61	11.4
+173	"Somalia"	"Africa"	"18#5"	38.25	11.82	55.32	5.41	8.3
+174	"Sudan"	"Africa"	"18#3"	33.63	6.41	66.79	4.66	6.6
+175	"Tanzania"	"Africa"	"18#2"	33.71	5.17	69.9	4.45	8.4
+176	"Guinea-Bissau"	"Africa"	"18#0"	36.64	7.69	63.26	4.72	9.5
+177	"Liberia"	"Africa"	"18#0"	36.96	6.78	65.1	4.84	9.9
+178	"Burkina Faso"	"Africa"	"17#9"	34.34	7.92	63.06	4.39	5.6
+179	"Burundi"	"Africa"	"17#7"	35.48	6.07	67.07	5.1	5.4
+180	"Benin"	"Africa"	"17#0"	41.55	8.21	61.82	5.47	9.6
+181	"Mozambique"	"Africa"	"17#0"	38.03	10.59	56.49	4.89	7.2
+182	"Zambia"	"Africa"	"16#9"	35.23	6.24	65.92	4.63	8.1
+183	"Malawi"	"Africa"	"16#8"	28.59	4.66	72.16	3.51	5.8
+184	"Congo, Democratic Republic of the"	"Africa"	"16#7"	40.53	8.15	61.43	5.7	6.7
+185	"Chad"	"Africa"	"16#1"	41.05	9.7	58.73	5.57	6.1
+186	"Mali"	"Africa"	"16#0"	41.6	8.77	62.01	5.63	8.6
+187	"Angola"	"Africa"	"15#9"	42.22	8.24	61.71	5.9	8.2
+188	"Uganda"	"Africa"	"15#7"	41.6	5.17	68.58	5.45	5.3
+189	"Niger"	"Africa"	"14#8"	47.28	10.09	59.7	6.91	5.5

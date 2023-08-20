@@ -1,0 +1,3 @@
+conda env list
+source activate hw31
+uvicorn main:app --reload

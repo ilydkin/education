@@ -1,0 +1,5 @@
+Запуск обучения
+python -m lyrics.train --songdata-file manowar.csv --early-stopping-patience 50 --artists ''
+
+Запуск предсказания
+python -m cli lyrics export$model_valmodel.h5 export$model_valtokenizer.pickle --text 'how do you feel today' --length 50
