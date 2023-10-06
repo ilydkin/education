@@ -5,4 +5,8 @@
 3. 2023.08_SQL (advanced)
 4. 2023.08_Feature Engineering (advanced)
 5. 2023.08_Data Cleaning
-6. 2023.08_Data Visualization
+6. 2023.08_Data Visualization (Seaborn, Matplotlib)
+7. 2023.08_Machine Learning Explainability (eli5, shap)
+8. 2023.08_Deep Learning (Keras)
+9. 2023.09_Computer Vision (CNN, TensorFlow)
+10. 2023.10_Time Series
