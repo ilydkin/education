@@ -9,4 +9,5 @@
 7. 2023.08_Machine Learning Explainability (eli5, shap)
 8. 2023.08_Deep Learning (Keras)
 9. 2023.09_Computer Vision (CNN, TensorFlow)
-10. 2023.10_Time Series
+10. 2023.10_Time Series Analysis (Time Dependence, Fourier, Hybrid Models)  
+11. 2023.11_Geospatial Analysis (GeoPandas, Folium)
