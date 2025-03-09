@@ -1,4 +1,5 @@
-**/data/
-**/archive/
 **/.ipynb_checkpoints/
 **/.idea/
+
+**/data/
+**/archive/
