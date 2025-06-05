@@ -88,21 +88,22 @@ class FeatureGeneratorWhithBins(FeatureGenerator):
         - массив нормированных долей по каждому бину, в котором нули заменены на 1e-6 (защита от логарифма нуля).
         """
         counts, _ = np.histogram(data, bins=bins, density=False)
-        train_ratio = counts / len(data)
-        zero_protected = np.clip(train_ratio, 1e-6, None)
+        ratio = counts / len(data)
+        zero_protected = np.clip(ratio, 1e-6, None)
+        zero_protected /= zero_protected.sum()
         return zero_protected
 
 
 class PSI(FeatureGeneratorWhithBins):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.value = self.calculate_psi(self.train_ratio, self.current_ratio)
-
-    def __call__(self) -> float:
-        return self.value
+        self.bins_contribution = self.calculate_psi_values(
+            self.train_ratio, self.current_ratio
+        )
+        self.value = float(np.sum(self.bins_contribution))
 
     @staticmethod
-    def calculate_psi(train_ratio, current_ratio) -> float:
+    def calculate_psi_values(train_ratio, current_ratio) -> float:
         """
         Векторный расчет PSI
 
@@ -111,8 +112,7 @@ class PSI(FeatureGeneratorWhithBins):
         - train_ration: массив нормированных долей по каждому бину в ОБУЧАЮЩЕЙ ВЫБОРКЕ. Число элементов в массиве определено числом бинов
         - current_ratio: массив нормированных долей по каждому бину в ТЕКУЩЕЙ ВЫБОРКЕ. Число элементов в массиве определено числом бинов
         """
-        psi_values = (train_ratio - current_ratio) * np.log(train_ratio / current_ratio)
-        return np.sum(psi_values)
+        return (train_ratio - current_ratio) * np.log(train_ratio / current_ratio)
 
 
 class Wasserstein(FeatureGenerator):
@@ -125,10 +125,6 @@ class Wasserstein(FeatureGenerator):
         self.train_iecdf = self.make_iecdf(self.train, self.common_x)
         self.current_iecdf = self.make_iecdf(self.current, self.common_x)
         self.value = self.wasserstein()
-        self.value_norm = self.wasserstein_norm()
-
-    def __call__(self) -> float:
-        return self.value_norm
 
     def make_common_space(self):
         """
@@ -159,19 +155,15 @@ class Wasserstein(FeatureGenerator):
     def wasserstein(self):
         """
         Благодаря тому, что на предыдущем шаге рассчитаны обратные CDF, теперь есть 2 массива квантилей от 0 до 1 с соответствующими значениями.
-        Т.к. площадь считается на всем интервале вероятностей (от 0 до 1), то интегрирование сводится к рассчету среднего значения по OY,
+        1. Т.к. площадь считается на всем интервале вероятностей (от 0 до 1), то интегрирование сводится к рассчету среднего значения по OY,
             что в приближении равно просто среднему значению разницы квантильных функций двух распределений.
+        2. Результат нормируется по диапазону значений фичи
         """
-        return np.mean(np.abs(self.train_iecdf - self.current_iecdf))
-
-    def wasserstein_norm(self):
-        """
-        Нормализует расстояние по диапазону значений фичи
-        """
+        wass = np.mean(np.abs(self.train_iecdf - self.current_iecdf))
         scale = max(self.train.max(), self.current.max()) - min(
             self.train.min(), self.current.min()
         )
-        return self.value / scale if scale else 0.0
+        return float(wass / scale) if scale else 0.0
 
 
 class KS(FeatureGenerator):
@@ -186,15 +178,12 @@ class KS(FeatureGenerator):
         )
         self.train_ecfd = self.make_ecdf(self.train)
         self.current_ecfd = self.make_ecdf(self.current)
-        self.ks_statistic = np.max(np.abs(self.train_ecfd - self.current_ecfd))
+        self.value = np.max(np.abs(self.train_ecfd - self.current_ecfd))
         self.p_value = self.ks_p_value()
-
-    def __call__(self) -> float:
-        return self.ks_statistic
 
     def ks_p_value(self) -> np.float64:
         """
-        e p-value for the test
+        p-value for the test
         """
         _, pval = ks_2samp(self.train, self.current)
         return pval  # type: ignore
@@ -219,19 +208,16 @@ class KS(FeatureGenerator):
 
 class JansenShannon(FeatureGeneratorWhithBins):
     def __init__(self, **kwargs):
-        """ 
+        """
         self.M - "среднее" распределение:
                 - у нас уже есть нормированные гистограммы, в которых по каждому бину дается доля вхождений.
                 - Эти значения усредняются для двух гистограмм (т.е. половина поэлементной суммы)
-                - Расстояния от этого "среднего" распределения и будут учитываться в метрике 
+                - Расстояния от этого "среднего" распределения и будут учитываться в метрике
         """
         super().__init__(**kwargs)
         self.M = 0.5 * (self.train_ratio + self.current_ratio)
         self.value = self.compute_js_distance()
         self.jsd_contrib = self.compute_bin_contributions()
-
-    def __call__(self):
-        return self.value
 
     def compute_js_distance(self) -> float:
         """
@@ -266,7 +252,7 @@ class JansenShannon(FeatureGeneratorWhithBins):
         js_distance = np.sqrt(js_divergence)
         return float(js_distance)
 
-    def compute_bin_contributions(self)-> np.ndarray:
+    def compute_bin_contributions(self) -> np.ndarray:
         """
         Compute per-bin contributions to the Jensen–Shannon divergence.
         Возвращает:
@@ -277,4 +263,3 @@ class JansenShannon(FeatureGeneratorWhithBins):
         kl_pm = self.train_ratio * np.log2(self.train_ratio / self.M)
         kl_qm = self.current_ratio * np.log2(self.current_ratio / self.M)
         return 0.5 * (kl_pm + kl_qm)
-
